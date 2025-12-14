@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style> *{
+            margin: 0;
+            font-family: Arial;
+            border: border-box;
+        }
+        .navbar{
+            height: 80px;
+            background-color: black; 
+            display: flex;
+        }
+        #Amazon{
+            background-image: url("amazon_logo.webp");
+            height: 50px;
+            width: 100px;
+            background-size: cover;
+            border: 1.5px solid transparent;
+        }
+        #Amazon:hover{
+            border: 1.5px solid white;
+        }
+        .location{
+            color: azure;
+            margin-top: 14px;
+            width:100px;
+            height: 50px;
+            border: 1.5px solid transparent;
+        }
+        .location:hover{
+            border: 1.5px solid white;
+        }
+        
+        #deli{
+            color: #cccccc;
+            font-size: 12px;
+            margin-left: 13px;
+        }
+        #india{
+            color: #ffffff;
+            font-size: 14px;
+            display: flex;
+
+        }
+        .search{
+            margin-top: 20px;
+        }
+        .plac{
+            width: 420px;
+
+        }
+        button{
+            background-color: yellow;
+            margin-right: 0px;
+        }
+        .lang{
+            margin-top: 23px;
+            background-color: black;
+            color: #ffffff;
+            height: 15px;
+            margin-left: 20px;
+        }
+        #eng{
+            background-color: #00000d;
+            color: #cccccc;
+        }
+        .acc{
+            background-color: rgb(5, 0, 0);
+            height: 55px;
+            width: 160px;
+            border: 1.5px solid transparent;
+            margin-left: 55px;
+            margin-top: 15px;
+            padding-top: 5px;
+            color: white;
+        }
+        .hello{
+            font-size: 13px;
+        }
+        .lis{
+            font-size: 16px;
+            display: flex;
+        }
+        .lis:hover{
+            text-decoration: underline;
+        }
+        img{
+            width: 1020px;
+            height: 150pxpx;
+        }
+        .ret{
+            background-color: black;
+            height: 50px;
+            width: 9%;
+            margin-left: 45px;
+            margin-top: 17px;
+            padding-top: 5px;
+        }
+        .turns{
+            color: #ffffff;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .turns:hover{
+            text-decoration: underline;
+        }
+        .ord{
+            color: #ffffff;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .ord:hover{
+            text-decoration: underline;
+        }
+        .cart{
+            height: 60px;
+            width: 100px;
+            background-color: #00000d;
+            color: #ffffff;
+            font-size: 30px;
+            margin-top: 30px;
+            margin-left: 60px;
+        }
+        .upper{
+            background-color: #0f1111;
+            height: 40px;
+            font-size: 12px;
+            font-family: sans-serif,arial;
+            display: flex;
+        }
+        .all{
+            display: flex;
+            color: rgb(239, 241, 241);
+            padding: 8px 9px;
+            border: 1.5px solid transparent;
+            width: 40px;
+        }
+        .all:hover{
+            border: 1.5px solid white;
+        }
+        .inner{
+            color: #eef1f1;
+            margin: 10px;
+        }
+        a{
+            margin-right: 55px;
+            text-decoration: none;
+            color: #cccccc;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .image{
+            height:220px;
+            width: 100%;
+            display: block;
+        }
+        .photo{
+            background-color: rgba(240, 237, 237, 1);
+            height: 300px;
+            width: 350px;
+            border: 1.5px solid transparent;
+        }
+        .images{
+            display: flex;
+            gap: 30px;
+        }
+        .images img{
+            width: 120px;
+            height: auto;
+        }
+        .texted{
+            display: flex;
+            gap: 15px;
+        }
+        .text1{
+            margin-top: 10px;
+            font-size: 15px;
+            color: black;
+            height: 60px;
+            width: 35%;
+            border: 1.5px solid black;
+        }
+        .text2{
+            margin-top: 10px;
+            font-size: 15px;
+            color: black;
+            height: 80px;
+            width: 50%;
+            border: 1.5px solid black;
+        }
+        .photos{
+            display: flex;
+        }
+        .kaddu{
+            margin-left: 20px;
+        }
+        .other{
+            background-color: white;
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+        }
+        .gola1{
+            height:200px;
+            width: 180px;
+        }
+        .gola2{
+            height:200px;
+            width: 180px;
+            margin-left: 10px;
+        }
+        .gola3{
+            height:200px;
+            width: 180px;
+            margin-left: 10px;
+        }
+        .gola4{
+            height:200px;
+            width: 180px;
+            margin-left: 10px;
+        }
+        .gola5{
+            height:200px;
+            width: 180px;
+            margin-left: 10px;
+        }
+        .switch1{
+            height:200px;
+            width: 180px;
+            margin-left: 10px;
+        }
+        .switch2{
+            height:200px;
+            width: 180px;
+            margin-left: 10px;
+        }
+        .sign{
+            background-color: rgb(224, 210, 197);
+            height: 200px;
+            width: 100%;
+            border: 1.5px solid black;
+            margin-top: 20px;
+        }
+        .in{
+            text-align: center;
+            padding-top: 30px;
+        }
+        .sign_in{
+                background-color: rgb(243, 243, 7);
+                border-radius: 40%;
+                width: 130px;
+        }
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .new{
+            color: black;
+        }
+        .back{
+            height: 50px;
+            width: 100%;
+            background-color: #31394d;
+        }
+        .top{
+            color: #ffffff;
+            text-align: center;
+            padding-top: 12px;
+        }
+        .foot{
+            height: 400px;
+            width: 100%;
+            background-color: #232f3f;
+            display: flex; 
+        }
+        .get{
+            color: #eef1f1;
+            height: 300px;
+            width: 200px;
+            background-color: #232f3f;
+            line-height: 30px;
+        }
+        .con{
+            color: #eef1f1;
+            height: 300px;
+            width:200px ;
+            background-color: #232f3f;
+            line-height: 30px;
+            margin-left: 100px;
+        }
+        .money{
+             color: #eef1f1;
+            height: 300px;
+            width:200px ;
+            background-color: #232f3f;
+            line-height: 30px;
+            margin-left: 100px;
+        }
+        .help{
+             color: #eef1f1;
+            height: 300px;
+            width:200px ;
+            background-color: #232f3f;
+            line-height: 30px;
+            margin-left: 100px;
+        }
+        .down{
+            background-color: #31394d;
+            height: 150px;
+            width: 100%;
+            display: flex;
+        }
+        .downimage{
+            height: 150px;
+            width: 200px;
+            margin-left: 400px;
+            padding-top: 25px;
+            font-size: 90px;
+            color: #ffffff;
+        }
+        .english{
+            height: 30px;
+            width: 100px;
+            border: 1.5px solid white;
+            margin-top: 60px;
+            margin-left: 60px;
+            display: flex;
+        }
+        #engu{
+            font-size: 16px;
+            padding: 5px;
+            color: #e0e0e1;
+        }
+        #sel{
+            background-color: #31394d;
+            color: #f1f1f2;
+        }
+        #browser{
+            color: #f1f1f2;
+            padding-top: 5px;
+        }
+        .ind{
+            color: #ffffff;
+            font-size: 14px;
+            margin-top: 60px;
+            margin-left: 10px;
+            height: 30px;
+            width: 90px;
+            border: 1.5px solid white;
+        }
+        .cont{
+            background-color: #f0f2f4;
+            width: 100%;
+            height: 50px;
+        }</style>
+</head>
+<body>
+    <header>
+<div class="navbar">
+    <div id="Amazon">
+    </div>
+    <div class="location">
+        <div id="deli">
+            <p>Deliver to</p>
+        </div>
+        <div id="india">
+            <i class="fa-solid fa-location-dot"></i>
+            <p> India</p>
+        </div>
+    </div>
+    <div class="search">
+        <input class="plac" text="" placeholder="search Amazon.in">
+        <button>
+        <i class="fa-solid fa-magnifying-glass-minus"></i></button>
+    </div>
+    <div class="lang">
+            <i class="fa-brands fa-font-awesome"></i>
+            <select name="En" id="eng">
+                <option value="hindi"> eng</option>
+                <option value="hindi"> Hindi</option>
+                <option value="Ur"> Urdu</option>
+                <option value="BHJ"> Bhoj</option>
+                <option value="Mal"> Mal</option>
+            </select>
+        </div>
+        <div class="acc">
+            <p class="hello">Hello ,Sign in</p>
+            <p class="lis">Accounts & Lists</p>
+        </div>
+        <div class="ret">
+            <a href="#" class="turns"> Returns</a>
+            <a href="#" class="ord">Orders</a>
+        </div>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+</div>
+ </header>
+ <header>
+<div class="upper">
+    <div class="all">
+        <i class="fa-solid fa-list"></i>
+        <p>All</p>
+    </div>
+    <div class="inner">
+        <a href="#"> Fresh</a>
+        <a href="#"> Mx Player</a>
+        <a href="#" > Sell</a>
+        <a href="#" > Sell</a>
+        <a href="#"> Best sellers</a>
+        <a href="#"> Mobiles</a>
+        <a href="#"> Today's Deals</a>
+        <a href="#"> customer service</a>
+        <a href="#"> Prime</a>
+        <a href="#"> New Releases</a>
+        <a href="#"> Amazon Pay</a>
+    </div>
+</div>
+</header>
+<div>
+    <img class="image" src="amazon_image.jpg" alt="homo">
+</div>
+<div class="photos">
+<div class="photo">
+    <h2>Revamp your home in style</h2>
+        <div class="images">
+            <img src="chidda.jpg" alt="chidda">
+            <img src="kamabal.jpg" alt="kamabal">
+        </div>
+        <div class="texted">
+        <p class="text">Figurines,vases & More</p>
+        <p class="text">Cushion ,covers,bedsheets,and many more</p>
+        </div>
+    <div class="images">
+        <img src="home.jpg" alt="home">
+        <img src="light.jpg" alt="light">
+    </div>
+    <div class="texted">
+        <p class="text">Home storage</p>
+        <p class="text">Lighting Solutions</p>
+        </div><br>
+        <a href="#" style="color: rgb(60, 91, 215);"> Explore all</a>
+</div>
+<div class="kaddu">
+<div class="photo">
+    <h2>Starting ₹49 | Deals on home essentials</h2>
+        <div class="images">
+            <img src="cleaning.jpg" alt="cleaning">
+            <img src="shower.jpg" alt="shower">
+        </div>
+        <div class="texted">
+        <p class="text">Cleaning supplies</p>
+        <p class="text">Bathroom accessories</p>
+        </div>
+    <div class="images">
+        <img src="tools.jpg" alt="tools">
+        <img src="wallpaper.jpg" alt="wallpaper">
+    </div>
+    <div class="texted">
+        <p class="text">Home Tools</p>
+        <p class="text">Wallpaper</p>
+        </div><br>
+        <a href="#" style="color: rgb(60, 91, 215);"> Explore all</a>
+</div>
+</div>
+<div class="kaddu">
+<div class="photo">
+    <h2>Bulk order discounts + Up to 18% GST savings</h2>
+        <div class="images">
+            <img src="laptop.jpg" alt="laptop">
+            <img src="Kitchen.jpg" alt="Kitchen">
+        </div>
+        <div class="texted">
+        <p class="text">Up to 45% off| Laptop</p>
+        <p class="text">Up to 60% off | kitchen appliances</p>
+        </div>
+    <div class="images">
+        <img src="chairs.jpg" alt="Furniture">
+        <img src="tv.jpg" alt="tv">
+    </div>
+    <div class="texted">
+        <p class="text">Min. 50% off | office chairs</p>
+        <p class="text">Up to 40% off | television </p>
+        </div><br>
+        <a href="#" style="color: rgb(60, 91, 215);">Create a free account</a>
+</div>
+</div>
+<div class="kaddu">
+<div class="photo">
+    <h2>Appliances for your home | Up to 55% off</h2>
+        <div class="images">
+            <img src="air.jpg" alt="air">
+            <img src="refigerators.jpg" alt="refigerators">
+        </div>
+        <div class="texted">
+        <p class="text">Up to 45% off | Air conditioners</p>
+        <p class="text">Refigerators</p>
+        </div>
+    <div class="images">
+        <img src="microwaves.jpg" alt="miv">
+        <img src="washing.jpg" alt="washing">
+    </div>
+    <div class="texted">
+        <p class="text">Microwaves</p>
+        <p class="text">Washing Machine </p>
+        </div><br>
+        <a href="#" style="color: rgb(60, 91, 215);">See more</a>
+</div>
+</div>
+</div>
+<div class="other">
+    <img class="gola1" src="gola1.jpg" alt="gola">
+    <img class="gola2" src="gola2.jpg" alt="gola">
+    <img class="gola3" src="gola3.jpg" alt="gola">
+    <img class="gola4" src="gola4.jpg" alt="gola">
+    <img class="gola5" src="gola5.jpg" alt="gola">
+    <img class="switch1" src="switch1.jpg" alt="switch">
+    <img class="switch2" src="switch2.jpg" alt="switch">
+</div>
+<div class="sign">
+    <div class="in">
+        <h2>See personalized recommendations</h2>
+        <button class="sign_in">Sign in</button><br>
+        <span>
+            <p class="new"> New customer ?</p>
+             <a href="#" style="color: blue;"> Sign in</a>
+        </span>
+    </div>
+</div>
+<div class="back">
+    <div class="top">
+        <p> Back To Top</p>
+    </div>
+</div>
+<footer>
+    <div class="foot">
+        <div class="get">
+            <h2>Get to Know Us</h2>
+            <p>About Amazon</p>
+            <p> Carrer</p>
+            <p> press releses</p>
+            <p>Amazon science</p>
+        </div>
+        <div class="con">
+            <h2>Connect with Us</h2>
+            <p>Facebook</p>
+            <p> Twitter</p>
+            <p> Instagram</p>
+            <p> Snapchat</p>
+            <p> Whatsapp</p>
+        </div>
+        <div class="money">
+            <h2>Make Money with Us</h2>
+            <p> Sell on Amazon</p>
+            <p> Sell under Amazon Accelator</p>
+            <p> Protect and Build Your brand</p>
+            <p> Amazon Global Selling </p>
+            <p> Supply to Amazon</p>
+            <p> Become an affilate </p>
+            <p> Advertise Your Products</p>
+        </div>
+        <div class="help">
+            <h2>Let Us Help You</h2>
+            <p>Your account</p>
+            <p>Returns Centre</p>
+            <p>Recalls and produts safety alearts</p>
+            <p>100% product procetction</p>
+            <p>Amazon App Download</p>
+            <p>help</p>
+        </div>
+    </div>
+</footer>
+<footer>
+    <div class="down">
+        <div class="downimage"><i class="fa-brands fa-amazon"></i>
+        </div>
+        <div class="english">
+            <i id="browser" class="fa-brands fa-firefox"></i>
+            <select id="sel">
+                <option value="English">English</option>
+                 <option value="Hindi">Hindi</option>
+                  <option value="Bhojpuri">Bhojpuri</option>
+                   <option value="Rush">Russian</option>
+                    <option value="Japeanse">Japeanse</option>
+                    <option value="Kannad">Kannad</option>
+            </select>
+        </div>
+        <div class="ind">
+            <p>🏳️ India</p>
+        </div>
+    </div>
+</footer>
+<div class="cont">
+</div>
+
+</body>
+</html>
